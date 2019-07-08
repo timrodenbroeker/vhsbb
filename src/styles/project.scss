@@ -1,0 +1,71 @@
+$primary: red;
+$secondary: blue;
+$fg: #d0d6e0;
+$bg: #111111;
+
+$white: #ffffff;
+
+$spaceDesktop: 100px;
+$spaceMobile: 100px;
+
+body {
+	font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 160%;
+}
+
+.lead {
+	font-size: calc(16px + 0.3vw);
+	line-height: 160%;
+}
+
+.intro {
+	.sans {
+		font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
+		font-weight: 400;
+	}
+
+	.serif {
+		font-family: 'Cormorant', times, serif;
+		font-weight: 600;
+	}
+
+	.claim {
+		font-family: 'Cormorant', times, serif;
+		font-weight: 600;
+	}
+	display: flex;
+	align-items: center;
+	min-height: 80vh;
+
+	.sans {
+		font-size: calc(16px + 0.6vw);
+		line-height: 120%;
+	}
+
+	.serif {
+		font-size: calc(40px + 2.8vw);
+		line-height: 80%;
+		.sans {
+			font-size: calc(22px + 2.8vw);
+			line-height: 80%;
+		}
+	}
+}
+
+.container {
+	background: transparent;
+}
+
+.p-container {
+	width: 100%;
+	max-width: 1500px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.story {
+	padding-top: $spaceDesktop;
+	padding-bottom: $spaceDesktop;
+}
