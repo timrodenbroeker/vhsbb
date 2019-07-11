@@ -1,7 +1,7 @@
 $primary: red;
 $secondary: blue;
 $fg: #d0d6e0;
-$bg: #111111;
+$bg: #000000;
 
 $white: #ffffff;
 
@@ -13,6 +13,7 @@ body {
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 160%;
+	color: #000000;
 }
 
 .lead {
@@ -21,6 +22,9 @@ body {
 }
 
 .intro {
+	h2.sans {
+		font-size: calc(10px + 1vw);
+	}
 	.sans {
 		font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
 		font-weight: 400;
@@ -29,12 +33,9 @@ body {
 	.serif {
 		font-family: 'Cormorant', times, serif;
 		font-weight: 600;
+		letter-spacing: -0.04em !important;
 	}
 
-	.claim {
-		font-family: 'Cormorant', times, serif;
-		font-weight: 600;
-	}
 	display: flex;
 	align-items: center;
 	min-height: 80vh;
@@ -54,6 +55,15 @@ body {
 	}
 }
 
+.claim {
+	font-family: 'Cormorant', times, serif;
+	font-weight: 600;
+}
+
+.story .claim {
+	text-align: center;
+}
+
 .container {
 	background: transparent;
 }
@@ -68,4 +78,12 @@ body {
 .story {
 	padding-top: $spaceDesktop;
 	padding-bottom: $spaceDesktop;
+}
+video {
+	width: 100%;
+}
+.flex-center-vert {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
